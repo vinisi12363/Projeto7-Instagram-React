@@ -25,7 +25,8 @@ body {
   z-index: 2;
 }
 
-.navbar ion-icon, .navbar img {
+.navbar ion-icon,
+.navbar img {
   cursor: pointer;
 }
 
@@ -38,7 +39,7 @@ body {
   height: 100%;
 }
 
-.navbar .container > * {
+.navbar .container>* {
   display: flex;
   align-items: center;
   height: 100%;
@@ -110,6 +111,12 @@ body {
   margin-right: 10px;
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .story .imagem {
   display: flex;
   justify-content: center;
@@ -117,7 +124,7 @@ body {
   height: 66px;
   width: 66px;
   background-image: url('../assets/img/story-circle.svg');
-  
+
 }
 
 .story .imagem img {
@@ -145,12 +152,18 @@ body {
   cursor: pointer;
 }
 
+.posts {
+  position: relative;
+  bottom: 330px;
+  right: 160px;
+
+}
+
 .post {
   border-radius: 3px;
   border: 1px solid #DBDBDB;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-top: 18px;
 }
 
@@ -162,7 +175,8 @@ body {
   font-weight: 500;
 }
 
-.post .topo .usuario, .post .topo .acoes {
+.post .topo .usuario,
+.post .topo .acoes {
   display: flex;
   align-items: center;
 }
@@ -173,7 +187,14 @@ body {
   margin-right: 10px;
 }
 
-.post .usuario, .post .topo img, .post .fundo img, .post ion-icon, .post strong, .usuario ion-icon, .usuario > img, .conteudo > img {
+.post .usuario,
+.post .topo img,
+.post .fundo img,
+.post ion-icon,
+.post strong,
+.usuario ion-icon,
+.usuario>img,
+.conteudo>img {
   cursor: pointer;
 }
 
@@ -216,18 +237,18 @@ body {
   width: 293px;
 }
 
-.sidebar > .usuario {
+.sidebar>.usuario {
   display: flex;
   align-items: center;
 }
 
-.sidebar > .usuario img {
+.sidebar>.usuario img {
   width: 56px;
   height: 56px;
   border-radius: 50%;
 }
 
-.sidebar > .usuario .texto {
+.sidebar>.usuario .texto {
   display: flex;
   flex-direction: column;
   margin-left: 14px;
@@ -235,7 +256,7 @@ body {
   font-weight: 300;
 }
 
-.sidebar > .usuario .texto strong {
+.sidebar>.usuario .texto strong {
   font-weight: 700;
   color: #262626;
 }
@@ -282,10 +303,11 @@ body {
   font-weight: 400;
 }
 
-.links, .copyright {
+.links,
+.copyright {
   font-size: 11px;
   color: #C7C7C7;
-} 
+}
 
 .links {
   margin-top: 40px;
@@ -305,4 +327,3 @@ ion-icon {
   padding-top: 5px;
   color: black;
 }
-
