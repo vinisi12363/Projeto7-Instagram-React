@@ -1,34 +1,39 @@
-const storys = [{
-        name: "meowed",
-        photoSRC: "./assets/img/meowed.svg",
-    },
-
+const storys = [
     {
-        name: "meowed",
-        photoSRC: "./assets/img/meowed.svg",
+        name: "9gag",
+        photoSRC: "./assets/img/9gag.svg",
     },
-
     {
         name: "meowed",
         photoSRC: "./assets/img/meowed.svg",
     },
 
     {
-        name: "meowed",
-        photoSRC: "./assets/img/meowed.svg",
+        name: "barked",
+        photoSRC: "./assets/img/barked.svg",
     },
 
     {
-        name: "meowed",
-        photoSRC: "./assets/img/meowed.svg",
+        name: "nathanwpylestrangeplanet",
+        photoSRC: "./assets/img/nathanwpylestrangeplanet.svg",
+    },
+
+    {
+        name: "wawawicomics",
+        photoSRC: "./assets/img/wawawicomics.svg",
+    },
+
+    {
+        name: "respondeai",
+        photoSRC: "./assets/img/respondeai.svg",
     },
     {
-        name: "meowed",
-        photoSRC: "./assets/img/meowed.svg",
+        name: "filomoderna",
+        photoSRC: "./assets/img/filomoderna.svg",
     },
     {
-        name: "meowed",
-        photoSRC: "./assets/img/meowed.svg",
+        name: "memeriagourmet",
+        photoSRC: "./assets/img/memeriagourmet.svg",
     },
     {
         name: "meowed",
