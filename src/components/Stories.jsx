@@ -1,22 +1,16 @@
 
-
-export default function Stories(props) {
+import StoryRender from "./StoryRender"
+import storys from "./storys"
+export default function Stories() {
     return (
 
         <div class="stories">
-            <div class="story">
-                <div class="imagem">
-                    <img src={props.photoSRC} alt={props.name} />
-                </div>
-                <div class="usuario">
-                    {props.name}
-                </div>
-            </div>
-
-            <div class="setinha">
-                <ion-icon name="chevron-forward-circle"></ion-icon>
-            </div>
+            
+            {storys.map((story) => (
+                    <StoryRender name={story.name} photoSRC = {story.photoSRC} />
+            ))}
 
         </div>
     )
 }
+
