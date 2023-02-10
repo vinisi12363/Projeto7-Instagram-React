@@ -6,7 +6,6 @@
    
     -  Salvar o post (ao clicar no ícone de salvar o post, ele deverá ficar preenchido).
  
- 
     - Caso a postagem já esteja salva, ao clicar no ícone, a postagem deve passar para não salva.
     -   *Like* no post:
   

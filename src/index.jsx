@@ -10,8 +10,26 @@
 
 //TODO LEMBARAR DE DAR OS COMMITS 
 
-alert ("Olá mundo! via react!");
+import ReactDOM from "react-dom";
+import Corpo from "./components/Corpo";
+import Footer from "./components/footer";
+import Navbar from "./components/Navbar";
+import Posts from "./components/Posts";
+import Sidebar from "./components/Sidebar";
+import Sugestoes from "./components/Sugestoes";
+import Usuario from "./components/Usuario";
 
-let  nome= prompt("digite o seu nome");
 
-alert (`OLÁ ${nome}`);
+
+
+function App() {
+  return (
+    <div class="app">
+      <Navbar />
+      <Corpo />
+      <Posts />
+    </div>
+  );
+}
+
+ReactDOM.render(<App />, document.querySelector(".root"));
