@@ -225,7 +225,11 @@ body {
   height: 20px;
   margin-right: 10px;
 }
-
+.curtidas img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
 .post:last-child {
   margin-bottom: 18px;
 }
