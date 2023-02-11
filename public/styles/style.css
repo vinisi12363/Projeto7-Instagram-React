@@ -152,12 +152,12 @@ body {
   cursor: pointer;
 }
 
-.posts {
+/* .posts {
   position: relative;
   bottom: 330px;
   right: 160px;
 
-}
+} */
 
 .post {
   border-radius: 3px;

@@ -10,6 +10,8 @@
 
 //TODO LEMBARAR DE DAR OS COMMITS 
 
+//TODO parei na criação do array de objetos post.
+
 import ReactDOM from "react-dom";
 import Corpo from "./components/Corpo";
 import Footer from "./components/footer";
@@ -27,7 +29,6 @@ function App() {
     <div class="app">
       <Navbar />
       <Corpo />
-      <Posts />
     </div>
   );
 }

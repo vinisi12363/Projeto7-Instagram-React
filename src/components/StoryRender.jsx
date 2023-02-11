@@ -1,4 +1,5 @@
 export default function StoryRender(props) {
+    
     return (
         <div class="story">
             <div class="imagem">
