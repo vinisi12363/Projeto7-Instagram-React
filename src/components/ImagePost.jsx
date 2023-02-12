@@ -2,12 +2,12 @@ import { useState } from "react"
 export default function ImagePost(props) {
     const [heartLiked , setHeartLiked] = useState (false);
     const [bookSaved , setBookSaved] = useState (false);
-    const [countLikes, setCountLikes] = useState (101523);
+    const [countLikes, setCountLikes] = useState (523);
 
 
     function toggleLike (like){
         setHeartLiked(like);
-        like ? setCountLikes (countLikes+1) : setCountLikes(countLikes-1)  
+        like ? setCountLikes (Number(countLikes)+1) : setCountLikes(countLikes-1)  
     }
     function toggleBookSave (save){
         setBookSaved(save);
@@ -38,7 +38,7 @@ export default function ImagePost(props) {
                 <div className="curtidas">
                     <img src="./assets/img/respondeai.svg" alt="respondeai" />
                     <div class="texto">
-                        Curtido por <strong>respondeai</strong> e <strong>outras {countLikes} pessoas</strong>
+                        Curtido por <strong>respondeai</strong> e <strong>outras 101.{countLikes} pessoas</strong>
                     </div>
                 </div>
             </div>
