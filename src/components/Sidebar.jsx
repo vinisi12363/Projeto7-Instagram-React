@@ -1,15 +1,13 @@
 
 import Usuario from "./Usuario"
 import Sugestoes from "./Sugestoes"
-export default function Sidebar() {
-   function alterarNome (){
 
-   }
-  
+export default function Sidebar() {
+  const defaultUser="catanacomics"
   return (
         <div class="sidebar">
         
-        <Usuario/>
+        <Usuario name={defaultUser}/>
         <Sugestoes/>
       
         <div class="links">

@@ -13,7 +13,7 @@ const sugestoes  = [
     nome:"adorable_animals"
 },{
     src:"./assets/img/smallcutecats.svg",
-    nome:"smallcutecats"
+    nome:"smallcutecats" 
 }
 
 ]

@@ -24,24 +24,35 @@
 
 */
 import { useState } from "react";
-export default function Usuario(){
+export default function Usuario(props){
     let userName="";
-    const [name, setName] = useState("catanacomics")
+    let imageSRC="";
+    const [name, setName] = useState(props.name)
+
+    const [imgSRC, setImgSRC] = useState ("./assets/img/catanacomics.svg")
 
     function alterarNome (){
         userName=prompt("digite o nome de usuario");
         if (userName ==="" || userName=== null || userName.length === 0)
             alterarNome();
         else{
-            setName(userName);
-            console.log("nome vale", name);
+            setName(userName);   
         }    
+    }
+
+    function alterarFoto (){
+      imageSRC=prompt("digite o caminho da imagem");
+      if (imageSRC ==="" || imageSRC=== null || imageSRC.length === 0)
+          alterarNome();
+      else{
+          setImgSRC(imageSRC);
+      } 
     }
    
    return (
         
          <div class="usuario">
-           <img src="./assets/img/catanacomics.svg" alt="imagem de perfil"/>
+           <img onClick = {()=>alterarFoto()} src={imgSRC} alt="imagem de perfil"/>
            <div class="texto">
              <span>
                <strong>{name}</strong>
