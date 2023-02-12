@@ -11,6 +11,15 @@
 //TODO LEMBARAR DE DAR OS COMMITS 
 
 //TODO parei na criação do array de objetos post.
-import ReactDOM from "react-dom";
-import App from "./components/App";
-ReactDOM.render(<App />, document.querySelector(".root"));
+
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from "./components/App"
+
+const root = ReactDOM.createRoot(document.querySelector('#root'))
+
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+)

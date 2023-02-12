@@ -23,10 +23,19 @@
 
 
 */
-
+import { useState } from "react";
 export default function Usuario(){
-    function alterarNome (){
+    let userName="";
+    const [name, setName] = useState("catanacomics")
 
+    function alterarNome (){
+        userName=prompt("digite o nome de usuario");
+        if (userName ==="" || userName=== null || userName.length === 0)
+            alterarNome();
+        else{
+            setName(userName);
+            console.log("nome vale", name);
+        }    
     }
    
    return (
@@ -35,7 +44,7 @@ export default function Usuario(){
            <img src="./assets/img/catanacomics.svg" alt="imagem de perfil"/>
            <div class="texto">
              <span>
-               <strong>catanacomics</strong>
+               <strong>{name}</strong>
                <ion-icon onClick= {()=>alterarNome()} name="pencil"></ion-icon>
              </span>
            </div>

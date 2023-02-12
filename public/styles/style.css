@@ -97,6 +97,7 @@ body {
   padding: 0 18px;
   overflow: hidden;
   position: relative;
+  background-color: #FFFFFF;
 }
 
 .story {
@@ -227,11 +228,16 @@ body {
   align-items: center;
   padding: 0 16px 13px;
   font-weight: 300;
-  background-color: #139EF2;
+}
+.fundo {
+  background-color: #FFFFFF;
+}
+.post {
+  background-color: #FFFFFF;
 }
 .curtidas {
   display: flex;
-
+  background-color: #ffffff;
   align-items: center;
   padding: 0 16px 13px;
   font-weight: 300;
