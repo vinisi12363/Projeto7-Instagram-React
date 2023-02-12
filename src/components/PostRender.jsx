@@ -10,6 +10,13 @@ export default function PostRender(props) {
         setHeartLiked(like);
         like ? setCountLikes(Number(countLikes) + 1) : setCountLikes(countLikes - 1)
     }
+    function togglePostLike(postLike) {
+        if (postLike){
+            setHeartLiked(postLike);
+            postLike ? setCountLikes(Number(countLikes) + 1) : setCountLikes(countLikes - 1)
+        }
+        
+    }
     function toggleBookSave(save) {
         setBookSaved(save);
     }
@@ -28,7 +35,7 @@ export default function PostRender(props) {
             </div>
 
             <div class="conteudo">
-                <img data-test="post-image" src={props.photoSRC} alt={props.photoAlt} onClick={() => toggleLike(!heartLiked)}
+                <img data-test="post-image" src={props.photoSRC} alt={props.photoAlt} onClick={() => togglePostLike(!heartLiked)}
                     style={heartLiked ? { color: "#ed4957" } : { color: "black" }} />
             </div>
 
