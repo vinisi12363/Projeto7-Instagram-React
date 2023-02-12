@@ -59,7 +59,6 @@ export default function Usuario(props){
                <ion-icon onClick= {()=>alterarNome()} name="pencil"></ion-icon>
              </span>
            </div>
-         </div>
-        
+         </div>   
    )
 }
