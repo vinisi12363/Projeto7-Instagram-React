@@ -223,11 +223,21 @@ body {
 
 .post .fundo .curtidas {
   display: flex;
+  flex-direction: row;
   align-items: center;
   padding: 0 16px 13px;
   font-weight: 300;
   background-color: #139EF2;
 }
+.curtidas {
+  display: flex;
+
+  align-items: center;
+  padding: 0 16px 13px;
+  font-weight: 300;
+
+}
+
 
 .post .fundo .curtidas img {
   width: 20px;
