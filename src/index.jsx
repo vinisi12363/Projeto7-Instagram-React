@@ -11,26 +11,6 @@
 //TODO LEMBARAR DE DAR OS COMMITS 
 
 //TODO parei na criação do array de objetos post.
-
 import ReactDOM from "react-dom";
-import Corpo from "./components/Corpo";
-import Footer from "./components/footer";
-import Navbar from "./components/Navbar";
-import Posts from "./components/Posts";
-import Sidebar from "./components/Sidebar";
-import Sugestoes from "./components/Sugestoes";
-import Usuario from "./components/Usuario";
-
-
-
-
-function App() {
-  return (
-    <div class="app">
-      <Navbar />
-      <Corpo />
-    </div>
-  );
-}
-
+import App from "./components/App";
 ReactDOM.render(<App />, document.querySelector(".root"));
