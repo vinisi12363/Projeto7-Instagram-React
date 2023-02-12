@@ -8,12 +8,12 @@ export default function PostRender(props) {
 
     function toggleLike(like) {
         setHeartLiked(like);
-        like ? setCountLikes(Number(countLikes) + 1) : setCountLikes(countLikes - 1)
+        like ? setCountLikes((countLikes + 1)) : setCountLikes(countLikes - 1)
     }
     function togglePostLike(postLike) {
         if (postLike){
             setHeartLiked(postLike);
-            postLike ? setCountLikes(Number(countLikes) + 1) : setCountLikes(countLikes - 1)
+            postLike ? setCountLikes((countLikes + 1)) : setCountLikes(countLikes - 1)
         }
         
     }
