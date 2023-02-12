@@ -1,9 +1,5 @@
 /*
--  O projeto também deverá ter alguns dados dinâmicos que irão mudar na tela. São eles:
-    -   Nome de usuário (ao apertar o lápis, aparece um `prompt` para alterá-lo). Se for passada uma string vazia, não atualiza.
-   
-    -  Imagem de perfil (ao clicar uma vez na imagem, aparece um `prompt` pedindo novo link). Se for passada uma string vazia, não atualiza.
-   
+
     -  Salvar o post (ao clicar no ícone de salvar o post, ele deverá ficar preenchido).
  
     - Caso a postagem já esteja salva, ao clicar no ícone, a postagem deve passar para não salva.
@@ -56,7 +52,7 @@ export default function Usuario(props){
            <div class="texto">
              <span>
                <strong>{name}</strong>
-               <ion-icon onClick= {()=>alterarNome()} name="pencil"></ion-icon>
+               <ion-icon onClick= {()=>alterarNome()} name="create-outline"></ion-icon>
              </span>
            </div>
          </div>   
