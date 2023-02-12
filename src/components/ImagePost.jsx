@@ -1,5 +1,6 @@
 import { useState } from "react"
 export default function ImagePost(props) {
+    console.log(props)
     const [heartLiked , setHeartLiked] = useState (false);
     const [bookSaved , setBookSaved] = useState (false);
     const [countLikes, setCountLikes] = useState (523);

@@ -6,6 +6,13 @@ const post = [
         photoAlt: "gato-telefone",
        
     },
+    {
+        name:"wawawicomics",
+        userImgSRC: "./assets/img/wawawicomics.svg",
+        photoSRC: "./assets/img/jett.jpeg",
+        photoAlt: "Jett",
+    },
+ 
      {
         name: "barked",
         userImgSRC: "./assets/img/barked.svg",
@@ -13,7 +20,7 @@ const post = [
         photoAlt: "dog",
         
     }
- 
+   
 
 ]
 
