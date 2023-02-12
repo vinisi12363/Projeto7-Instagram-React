@@ -1,6 +1,3 @@
-
-// fazer o use state pro like aqui KKKK
-
 export default function PostRender(props) {
     
     return (

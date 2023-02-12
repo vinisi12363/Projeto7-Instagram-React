@@ -23,3 +23,23 @@
 
 
 */
+
+export default function Usuario(){
+    function alterarNome (){
+
+    }
+   
+   return (
+        
+         <div class="usuario">
+           <img src="./assets/img/catanacomics.svg" alt="imagem de perfil"/>
+           <div class="texto">
+             <span>
+               <strong>catanacomics</strong>
+               <ion-icon onClick= {()=>alterarNome()} name="pencil"></ion-icon>
+             </span>
+           </div>
+         </div>
+        
+   )
+}

@@ -1,10 +1,9 @@
-
+/// a ação do heart like se for colocar é aqui .
 export default function ImagePost(props) {
     console.log("ImagePost", props)
 
     return (
         <>
-       
             <div class="conteudo">
                 <img src={props.src} alt={props.alt} />
             </div>
@@ -30,10 +29,6 @@ export default function ImagePost(props) {
             </div>
         </>
 
-
     )
-
-
-
 
 }
