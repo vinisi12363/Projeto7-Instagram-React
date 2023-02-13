@@ -1,7 +1,7 @@
 
-import Corpo from "./Corpo";
+import Corpo from "./components/Corpo"
 
-import Navbar from "./Navbar";
+import Navbar from "./components/Navbar"
 
 
 export default function App() {

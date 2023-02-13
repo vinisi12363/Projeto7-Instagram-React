@@ -2,10 +2,10 @@ export default function StoryRender(props) {
     
     return (
         <div class="story">
-            <div class="imagem">
+            <div className="imagem">
                 <img src={props.photoSRC} alt={props.name} />
             </div>
-            <div class="usuario">
+            <div className="usuario">
                 {props.name}
             </div>
         </div>

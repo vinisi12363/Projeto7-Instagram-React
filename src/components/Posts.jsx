@@ -8,7 +8,7 @@ export default function Posts() {
       {post.map((posts) => (
            
         <>
-          <PostRender name={posts.name} userImgSRC={posts.userImgSRC} photoSRC={posts.photoSRC} photoAlt={posts.photoAlt} />
+          <PostRender key={posts.name} name={posts.name} userImgSRC={posts.userImgSRC} photoSRC={posts.photoSRC} photoAlt={posts.photoAlt} />
         </>
 
       ))

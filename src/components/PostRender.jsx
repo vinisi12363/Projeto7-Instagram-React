@@ -24,23 +24,23 @@ export default function PostRender(props) {
     return (
 
         <div  data-test="post" class="post">
-            <div class="topo">
-                <div class="usuario">
+            <div className="topo">
+                <div className="usuario">
                     <img src={props.userImgSRC} />
                     {props.name}
                 </div>
-                <div class="acoes">
+                <div className="acoes">
                     <ion-icon name="ellipsis-horizontal"></ion-icon>
                 </div>
             </div>
 
-            <div class="conteudo">
+            <div className="conteudo">
                 <img data-test="post-image" src={props.photoSRC} alt={props.photoAlt} onClick={() => togglePostLike(!heartLiked)}
                     style={heartLiked ? { color: "#ed4957" } : { color: "black" }} />
             </div>
 
-            <div class="fundo">
-                <div class="acoes">
+            <div className="fundo">
+                <div className="acoes">
                     <div className="innerAcoes" >
                         <ion-icon data-test="like-post" onClick={() => toggleLike(!heartLiked)} className={heartLiked} name={heartLiked ? "heart" : "heart-outline"}
                             style={heartLiked ? { color: "#ed4957" } : { color: "black" }}></ion-icon>
@@ -56,7 +56,7 @@ export default function PostRender(props) {
 
                 <div className="curtidas">
                     <img src="./assets/img/respondeai.svg" alt="respondeai" />
-                    <div class="texto">
+                    <div className="texto">
                         Curtido por <strong>respondeai</strong> e <strong data-test="likes-number">outras 101.{countLikes} pessoas</strong>
                     </div>
                 </div>

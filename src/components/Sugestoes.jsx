@@ -3,13 +3,13 @@ import sugestoes from "./sugestoes"
 
 export default function Sugestoes() {
     return (
-        <div class="sugestoes">
-            <div class="titulo">
+        <div className="sugestoes">
+            <div className="titulo">
                 Sugestões para você
                 <div>Ver tudo</div>
             </div>
             {   sugestoes.map((sugestao)=>(
-                <SugestoesRender src={sugestao.src} name={sugestao.nome} />
+                <SugestoesRender key= {sugestao.nome} src={sugestao.src} name={sugestao.nome} />
             ))}
         </div>
 

@@ -7,9 +7,9 @@ export default function Stories() {
         <div class="stories">
             
             {storys.map((story) => (
-                    <StoryRender name={story.name} photoSRC = {story.photoSRC} />
+                    <StoryRender key={story.name} name={story.name} photoSRC = {story.photoSRC} />
             ))}
-            <div class="setinha">
+            <div className="setinha">
              <ion-icon name="chevron-forward-circle"></ion-icon>
             </div>
         </div>   

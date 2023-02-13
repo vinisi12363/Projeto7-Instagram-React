@@ -1,11 +1,11 @@
 export default function SugestoesRender(props) {
     return (
-        <div class="sugestao">
-            <div class="usuario">
+        <div className="sugestao">
+            <div className="usuario">
                 <img src={props.src} alt={props.name} />
                 <div class="texto">
-                    <div class="nome">{props.name}</div>
-                    <div class="razao">Segue você</div>
+                    <div className="nome">{props.name}</div>
+                    <div className="razao">Segue você</div>
                 </div>
             </div>
 
